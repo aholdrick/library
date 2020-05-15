@@ -21,8 +21,7 @@ function addBook() {
     /*let testBooks = new Book(one, two, three, four); //take this out after testing completed
     myLibrary.push(testBooks);*/
 
-    let addBook = new Book(userInputTitle.value, userInputAuthor.value, 
-                        userInputLength.value, userInputRead.checked);
+    let addBook = new Book(userInputTitle.value, userInputAuthor.value, userInputLength.value, userInputRead.checked);
     myLibrary.push(addBook);
     userInputTitle.value = "";
     userInputAuthor .value = "";
