@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>skeleton</title>
+    <meta charset="UTF-8"/>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="header-container">
+
+    </div>
+    <div id="container">
+        <div id="form-container">
+            <label class="input-info" for="book-title-text">Enter Book Title</label>
+                <input class="input-text-box" id="book-title" type="text" name="book-title" placeholder="Title..."></input>
+            <label class="input-info"for="book-author-text">Enter Author</label>
+                <input class="input-text-box" id="book-author" type="text" name="book-author" placeholder="Author..."></input>
+            <label class="input-info" for="book-length-number" max="99999" paceholder="000">Enter number of pages</label>
+                <input class="input-text-box" id="book-length" type="number" name="book-length"></input>
+            <label id="book-read-text" for="yes-no-radio">Have you read the book?</label>
+                <input id="book-read" type="checkbox" name="yes-no"></input>
+            <div id="add-book-button"><p style="user-select: none;" onclick="addBook()">Add Book</p></div>
+        </div>
+        <div id="table-header">
+            <span id="title" class="header-text">Book Title</span>
+            <span id="author" class="header-text">Book Author</span>
+            <span id="length" class="header-text">Book Length</span>
+            <span id="read-true-false" class="header-text">Read</span>
+        </div>
+        <div id="info-container">
+            <table>
+                <thead>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </thead>
+                <tbody id="table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
